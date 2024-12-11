@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+    All Stores | Green BD
+{% endblock %}
+
+{% block content %}
+<h2 class="text-center m-3">All Stores</h2>
+
+    <div class="container d-flex gap-4">
+        {% for store in stores %}
+            <div class="card" style="width: 18rem;">
+                <img src="{{ store.store_profile.url }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ store.name }}</h5>
+                    <p class="card-text">{{ store.address }}</p>
+                    <a href="{{ store.get_absolute_url }}" class="btn btn-primary">Visit Store</a>
+                </div>
+            </div>
+    {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,39 @@
+# Ignore Django project files
+*.pyc
+__pycache__/
+*.log
+
+# Ignore virtual environment files
+venv/
+env/
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore media files
+media/
+
+# Ignore static files
+staticfiles/
+
+# Ignore database files
+db.sqlite3
+
+# Ignore migrations files
+migrations/
+
+# Ignore pycache files
+__pycache__/
+
+# Ignore other files
+*.env
+*.txt
+*.pdf
+*.docx
+*.xlsx
+*.pptx
